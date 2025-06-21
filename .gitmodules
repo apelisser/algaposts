@@ -1,0 +1,6 @@
+[submodule "microsservices/post-service"]
+	path = microsservices/post-service
+	url = git@github.com:apelisser/post-service.git
+[submodule "microsservices/text-processor-service"]
+	path = microsservices/text-processor-service
+	url = git@github.com:apelisser/text-processor-service.git
