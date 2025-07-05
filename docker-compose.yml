@@ -1,0 +1,16 @@
+services:
+  algaposts-rabbitmq:
+    image: rabbitmq:3-management
+    restart: no
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    volumes:
+      - algaposts-rabbitmq:/var/lib/rabbitmq
+      - ./configs/rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins
+
+volumes:
+  algaposts-rabbitmq:
